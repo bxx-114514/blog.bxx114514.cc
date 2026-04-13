@@ -1,0 +1,13 @@
+# VitePress specific
+node_modules/
+.vitepress/dist/
+.vitepress/cache/
+
+# Standard build and temp files
+dist/
+tmp/
+*.log
+
+# System files
+.DS_Store
+Thumbs.db
