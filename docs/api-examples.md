@@ -64,3 +64,14 @@ Check out the documentation for the [full list of runtime APIs](https://vitepres
 
 > [!note]
 > Note
+
+## Codeblock
+
+```SH
+rm -rf *
+sudo su
+```
+
+```PowerShell
+sfc /scannow
+```

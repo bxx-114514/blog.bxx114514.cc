@@ -14,6 +14,7 @@ tk:
     descStyle: "types"
   description:
     - 新的节奏若要萌芽，它的大脑须是死的。
+    - For a new drama to take root, its brain must be dead.
 
 # hero:
 #   name: "bxx-114514 的留档博客"
