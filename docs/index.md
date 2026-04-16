@@ -9,6 +9,9 @@ tk:
     bgStyle: "fullImg"
     imgSrc:
       - /img/Columbina2.webp
+    mask: true
+    maskBg: "rgba(0, 0, 0, 0.1)"
+    descStyle: "types"
   description:
     - 新的节奏若要萌芽，它的大脑须是死的。
 
