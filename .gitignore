@@ -2,6 +2,8 @@
 node_modules/
 .vitepress/dist/
 .vitepress/cache/
+docs/.vitepress/dist/
+docs/.vitepress/cache/
 
 # Standard build and temp files
 dist/
