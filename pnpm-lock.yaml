@@ -12,8 +12,8 @@ importers:
         specifier: 2.0.0-alpha.17
         version: 2.0.0-alpha.17(postcss@8.5.8)
       vitepress-theme-teek:
-        specifier: ^1.6.0
-        version: 1.6.0(vitepress@2.0.0-alpha.17(postcss@8.5.8))(vue@3.5.32)
+        specifier: ^1.6.2
+        version: 1.6.2(vitepress@2.0.0-alpha.17(postcss@8.5.8))(vue@3.5.32)
 
 packages:
 
@@ -582,12 +582,12 @@ packages:
     resolution: {integrity: sha512-5BMULNob1vgFX6EjQw5izWDxrecWK9AM72rugNr0TFldMOi0fj6Jk+zeKIt0xGj4cEfQIJth4w3OKWOJ4f+AFw==}
     engines: {node: '>=0.10.0'}
 
-  js-yaml@3.14.2:
-    resolution: {integrity: sha512-PMSmkqxr106Xa156c2M265Z+FTrPl+oxd/rgOQy2tijQeK5TxQ43psO1ZCwhVOSdnn+RzkzlRz/eY4BgJBYVpg==}
+  js-yaml@3.15.0:
+    resolution: {integrity: sha512-ttBQIIQPDeLjpPOohtUdXuXUVoA2uIB6fEH9HyJ7234s5mBJ5wTx20njxplLZQgLaOfpmPQA7X2t5AX6tIPbog==}
     hasBin: true
 
-  js-yaml@4.1.1:
-    resolution: {integrity: sha512-qQKT4zQxXl8lLwBtHMWwaTcGfFOZviOJet3Oy/xmGk2gZH677CJM9EvtfdSkgWcATZhj/55JZ0rmy3myCT5lsA==}
+  js-yaml@4.3.0:
+    resolution: {integrity: sha512-1td788aAnnZ5qs7V2QIRl1owjtYpbKt749Y3xauqQgwIIGF/xXWz1wMTEBx5O3LK3lXLVuqXPdPxj2BoFHaW9Q==}
     hasBin: true
 
   kind-of@6.0.3:
@@ -645,6 +645,10 @@ packages:
     resolution: {integrity: sha512-QP88BAKvMam/3NxH6vj2o21R6MjxZUAd6nlwAS/pnGvN9IVLocLHxGYIzFhg6fUQ+5th6P4dv4eW9jX3DSIj7A==}
     engines: {node: '>=12'}
 
+  picomatch@4.0.5:
+    resolution: {integrity: sha512-RvwwcruNjI1ncT5xRakeyS9Lf8lcItv34KD+aif+VH9kduAyfYBipGh12274xtenIPZ119/R9BdTBa8gAwSh0A==}
+    engines: {node: '>=12'}
+
   postcss@8.5.8:
     resolution: {integrity: sha512-OW/rX8O/jXnm82Ey1k44pObPtdblfiuWnrd8X7GJ7emImCOstunGbXUpp7HdBrFQX6rJzn3sPT397Wp5aCwCHg==}
     engines: {node: ^10 || ^12 || >=14}
@@ -697,8 +701,8 @@ packages:
     resolution: {integrity: sha512-j2Zq4NyQYG5XMST4cbs02Ak8iJUdxRM0XI5QyxXuZOzKOINmWurp3smXu3y5wDcJrptwpSjgXHzIQxR0omXljQ==}
     engines: {node: '>=12.0.0'}
 
-  tinyglobby@0.2.16:
-    resolution: {integrity: sha512-pn99VhoACYR8nFHhxqix+uvsbXineAasWm5ojXoN8xEwK5Kd3/TrhNn1wByuD52UxWRLy8pu+kRMniEi6Eq9Zg==}
+  tinyglobby@0.2.17:
+    resolution: {integrity: sha512-wXR/dYpcqKmfWpEdZjiKJOwCNFndD0DMnrW/cYjVGttEkBfVgcLFHoNrlj47mjOVic9yyNu65alsgF4NQyTa2g==}
     engines: {node: '>=12.0.0'}
 
   trim-lines@3.0.1:
@@ -792,8 +796,8 @@ packages:
     peerDependencies:
       vitepress: ^1.6.4
 
-  vitepress-theme-teek@1.6.0:
-    resolution: {integrity: sha512-bj5S5JisJj+NglrD2Wm+txvo5z8+4h/WpZCKTq+p/VlNY/QzFVaD/enD4UE+e+ELn8LpC5LBFISW8hyaLt73Fg==}
+  vitepress-theme-teek@1.6.2:
+    resolution: {integrity: sha512-LWrsfnl0YZT+kc4KHBuKYZNFnkdfUjBlXgz//K/El0m/p627JwKv0Vf3nksBQRbBo4951RPq11NHIGST3QX92A==}
     peerDependencies:
       vitepress: ^1.6.4
 
@@ -1236,6 +1240,10 @@ snapshots:
     optionalDependencies:
       picomatch: 4.0.4
 
+  fdir@6.5.0(picomatch@4.0.5):
+    optionalDependencies:
+      picomatch: 4.0.5
+
   focus-trap@8.0.1:
     dependencies:
       tabbable: 6.4.0
@@ -1245,7 +1253,7 @@ snapshots:
 
   gray-matter@4.0.3:
     dependencies:
-      js-yaml: 3.14.2
+      js-yaml: 3.15.0
       kind-of: 6.0.3
       section-matter: 1.0.0
       strip-bom-string: 1.0.0
@@ -1274,12 +1282,12 @@ snapshots:
 
   is-extendable@0.1.1: {}
 
-  js-yaml@3.14.2:
+  js-yaml@3.15.0:
     dependencies:
       argparse: 1.0.10
       esprima: 4.0.1
 
-  js-yaml@4.1.1:
+  js-yaml@4.3.0:
     dependencies:
       argparse: 2.0.1
 
@@ -1339,6 +1347,8 @@ snapshots:
   picocolors@1.1.1: {}
 
   picomatch@4.0.4: {}
+
+  picomatch@4.0.5: {}
 
   postcss@8.5.8:
     dependencies:
@@ -1425,10 +1435,10 @@ snapshots:
       fdir: 6.5.0(picomatch@4.0.4)
       picomatch: 4.0.4
 
-  tinyglobby@0.2.16:
+  tinyglobby@0.2.17:
     dependencies:
-      fdir: 6.5.0(picomatch@4.0.4)
-      picomatch: 4.0.4
+      fdir: 6.5.0(picomatch@4.0.5)
+      picomatch: 4.0.5
 
   trim-lines@3.0.1: {}
 
@@ -1480,7 +1490,7 @@ snapshots:
     dependencies:
       gray-matter: 4.0.3
       picocolors: 1.1.1
-      tinyglobby: 0.2.16
+      tinyglobby: 0.2.17
 
   vitepress-plugin-catalogue@1.1.2:
     dependencies:
@@ -1496,7 +1506,7 @@ snapshots:
     dependencies:
       gray-matter: 4.0.3
       picocolors: 1.1.1
-      tinyglobby: 0.2.16
+      tinyglobby: 0.2.17
       vitepress: 2.0.0-alpha.17(postcss@8.5.8)
 
   vitepress-plugin-md-h1@1.0.11:
@@ -1515,11 +1525,11 @@ snapshots:
       picocolors: 1.1.1
       vitepress: 2.0.0-alpha.17(postcss@8.5.8)
 
-  vitepress-theme-teek@1.6.0(vitepress@2.0.0-alpha.17(postcss@8.5.8))(vue@3.5.32):
+  vitepress-theme-teek@1.6.2(vitepress@2.0.0-alpha.17(postcss@8.5.8))(vue@3.5.32):
     dependencies:
       '@iconify/vue': 4.3.0(vue@3.5.32)
       gray-matter: 4.0.3
-      js-yaml: 4.1.1
+      js-yaml: 4.3.0
       markdown-it-container: 4.0.0
       vitepress: 2.0.0-alpha.17(postcss@8.5.8)
       vitepress-plugin-auto-frontmatter: 1.0.13
